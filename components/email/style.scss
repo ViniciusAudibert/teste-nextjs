@@ -1,0 +1,14 @@
+.identificacao-email {
+  > .tip {
+    font-size: 11px;
+    color: #3b3b3bfa;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: block;
+
+    > strong {
+      font-weight: 900;
+      font-size: 12px;
+    }
+  }
+}
