@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Row, Button } from 'reactstrap'
-import { Layout } from '../../components/layout'
+import { Layout } from '../../src/components/layout'
 import './style.scss'
 import Link from 'next/link'
 

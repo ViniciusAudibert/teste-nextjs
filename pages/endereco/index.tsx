@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Row } from 'reactstrap'
-import { Layout } from '../../components/layout'
+import { Layout } from '../../src/components/layout'
 import './style.scss'
 
 interface State {

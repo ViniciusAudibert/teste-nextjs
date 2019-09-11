@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, Row, Col } from 'reactstrap'
-import { MY_BASKET } from '../mocks/my-basket'
-import { Layout } from '../components/layout'
-import { CartItems } from '../components/cart-items'
+import { MY_BASKET } from '../src/mocks/my-basket'
+import { Layout } from '../src/components/layout'
+import { CartItems } from '../src/components/cart-items'
 import Link from 'next/link'
 
 class MyBasket extends React.Component {

@@ -2,10 +2,10 @@ import './style.scss'
 
 import React from 'react'
 import { Row, Col } from 'reactstrap'
-import { Layout } from '../../components/layout'
-import { IdentificacaoRegister } from '../../components/register'
-import { IdentificacaoPassword } from '../../components/password'
-import { IdentificacaoEmail } from '../../components/email'
+import { Layout } from '../../src/components/layout'
+import { IdentificacaoRegister } from '../../src/components/register'
+import { IdentificacaoPassword } from '../../src/components/password'
+import { IdentificacaoEmail } from '../../src/components/email'
 
 enum StepKey {
   EMAIL,
