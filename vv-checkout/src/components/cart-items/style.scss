@@ -1,0 +1,77 @@
+.cart-items {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  div.dropdown > button {
+    background: white;
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 5px;
+    padding: 8px;
+    color: gray;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    > div {
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+.cart-item-services {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  > .item {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    min-height: 60px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+
+    .service-item-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .service-price {
+        margin-left: 8px;
+        white-space: nowrap;
+      }
+    }
+
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+
+      > li {
+        border-top: 1px solid gray;
+        padding: 14px;
+
+        &:first-child {
+          border: none;
+        }
+      }
+    }
+  }
+}

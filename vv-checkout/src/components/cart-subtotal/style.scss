@@ -1,0 +1,19 @@
+.cart-subtotal {
+  list-style: none;
+  margin: 0;
+
+  > .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    background: white;
+    padding: 10px;
+    width: 100%;
+
+    &:last-child {
+      background-color: #f4f4f4;
+      border-bottom: none;
+    }
+  }
+}

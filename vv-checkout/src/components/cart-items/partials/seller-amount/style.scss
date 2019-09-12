@@ -1,0 +1,29 @@
+.cart-item-seller-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    flex: 0.5;
+  }
+
+  div.product-info-seller {
+    strong {
+      white-space: nowrap;
+    }
+  }
+
+  div.product-info-amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    > div {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

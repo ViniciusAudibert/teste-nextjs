@@ -1,3 +1,0 @@
-interface CartType {
-  items: CartItemType[]
-}

@@ -1,0 +1,9 @@
+.cart-item-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    margin-bottom: 16px;
+  }
+}

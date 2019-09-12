@@ -1,0 +1,70 @@
+{
+  "name": "vv-common",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "dependencies": {
+    "polished": "3.4.1",
+    "react-icons": "3.7.0",
+    "styled-components": "4.3.2",
+    "styled-system": "5.1.2"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,tsx",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "storybook": "start-storybook -p 6006",
+    "storybook:cb": "set STORYBOOK_REACT_APP_CLIENT=bahia && yarn storybook",
+    "build": "rm -rf dist && npm run build:types && npm run build:js",
+    "build:w": "npm-watch build",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel ./src --out-dir ./dist --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "peerDependencies": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.0",
+    "@babel/core": "7.6.0",
+    "@babel/plugin-proposal-numeric-separator": "7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.5",
+    "@babel/preset-env": "7.6.0",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.6.0",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/addon-storyshots": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "@types/chai": "4.2.2",
+    "@types/enzyme": "3.10.3",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.5",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "@types/storybook__addon-knobs": "5.0.3",
+    "@types/styled-components": "4.1.19",
+    "@types/styled-system": "5.1.1",
+    "chai": "4.2.0",
+    "enzyme": "3.10.0",
+    "npm-watch": "^0.6.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "typescript": "3.6.3"
+  }
+}
