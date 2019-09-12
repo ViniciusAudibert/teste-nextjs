@@ -1,9 +1,9 @@
+import './style.scss'
+
 import React, { useState } from 'react'
 import { MdDelete, MdLocalShipping } from 'react-icons/md'
-
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { Button, Checkbox, Icon, Text, Box } from 'vv-common'
-
 import { CartItem } from './partials/item'
 import { CartItemBox } from './partials/box'
 import { CartItemDescription } from './partials/description'
@@ -38,7 +38,7 @@ export const CartItems = ({ cart, ...rest }: Props) => {
           const { productInfo, price, delivery, services } = item
 
           return (
-            <CartItem key={index}>
+            <CartItem key={`cart-item-${index}`}>
               <CartItemBox>
                 {/* Info */}
                 <CartItemInfo>
@@ -66,7 +66,7 @@ export const CartItems = ({ cart, ...rest }: Props) => {
                         </DropdownMenu>
                       </Dropdown>
                       <Button>
-                        <Icon color="light-silver">
+                        <Icon color="#aaa">
                           <MdDelete size={20} />
                         </Icon>
                       </Button>

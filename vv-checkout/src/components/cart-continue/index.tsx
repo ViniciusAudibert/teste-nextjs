@@ -9,7 +9,7 @@ import Link from 'next/link'
 const CartContinue = ({ value, apply, ...rest }: any) => {
   return (
     <div className="cart-continue" {...rest}>
-      <Row noGutters full>
+      <Row noGutters>
         <Col xs={6} sm={6} md={7}>
           <div className="cart-resume">
             <Text variant="body1" transform="uppercase">

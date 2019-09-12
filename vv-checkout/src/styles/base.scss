@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,700&Roboto:300,400,500,700&&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+body,
+input,
+button {
+  font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
+}
+
+div#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 12px;
+}
+
+html,
+body,
+div#root {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
